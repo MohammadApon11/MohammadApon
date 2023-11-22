@@ -8,6 +8,7 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaNodeJs,
 } from "react-icons/fa";
 
 import {
@@ -15,6 +16,13 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiRedux,
+  SiTailwindcss,
+  SiBootstrap,
+  SiExpress,
+  SiFirebase,
+  SiMongodb,
+  SiSqlite,
 } from "react-icons/si";
 
 // about data
@@ -23,23 +31,31 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Front End Development",
         icons: [
-          <FaHtml5 key="html5" />,
+          <FaHtml5 key="html5" class="text-black" />,
           <FaCss3 key="css3" />,
           <FaJs key="js" />,
           <FaReact key="react" />,
           <SiNextdotjs key="next" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          <SiRedux key="redux" />,
+          <SiTailwindcss key="tailwind" />,
+          <SiBootstrap key="bootstrap" />,
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Back End Development",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="adobeXd" />,
-          <SiAdobephotoshop key="adobePs" />,
+          <FaNodeJs key="node" />,
+          <SiExpress key="express" />,
+          <SiFirebase key="firebase" />,
+        ],
+      },
+      {
+        title: "Database",
+        icons: [
+          <SiMongodb key="mongodb" />,
+          <SiSqlite key="sqlite" />,
         ],
       },
     ],
@@ -94,9 +110,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began Freelancing as a develoer, Since then, I&apos;ve
-            done remote work for agencies, counsulted for startups, and
-            collaborated on digital products for business and consumer use.
+              Hi there, I'm a versatile full-stack developer proficient in HTML, CSS, Tailwind, Bootstrap, and JavaScript. My expertise spans the MERN stack, Next.js, Redux, SQLite, and more. With a knack for crafting intuitive user interfaces and robust server-side solutions, I specialize in building dynamic web applications. I thrive on leveraging my diverse skill set to create seamless digital experiences, embodying adaptability and innovation in every project. Let's work together to bring your ideas to life!
           </motion.p>
           {/* counter */}
           <motion.div
@@ -110,7 +124,7 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />+
+                  <CountUp start={0} end={3} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
@@ -119,7 +133,7 @@ const About = () => {
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />+
+                  <CountUp start={0} end={20} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients
@@ -128,7 +142,7 @@ const About = () => {
               {/* Finished projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={120} duration={5} />+
+                  <CountUp start={0} end={50} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects
@@ -137,7 +151,7 @@ const About = () => {
               {/* awards */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={5} duration={5} />+
+                  <CountUp start={0} end={3} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Winning awards
@@ -185,7 +199,7 @@ const About = () => {
                     {/* icon */}
                     {item.icons?.map((icon, itemIndex) => {
                       return (
-                        <div key={itemIndex} className="text-2xl text-white">
+                        <div key={itemIndex} className={`text-2xl text-white ${icon.class}`}>
                           {icon}
                         </div>
                       );

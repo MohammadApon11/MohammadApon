@@ -37,9 +37,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            suscipit ratione facere nostrum amet dolore molestiae veritatis
-            consequatur voluptatem odit?
+            A seasoned Full Stack Developer with 3 years' expertise. Successfully delivered a diverse range of 50+ projects, including a comprehensive full-stack project through Programming Hero's online platform, showcasing extensive proficiency and versatility.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
