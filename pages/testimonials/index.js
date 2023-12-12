@@ -4,11 +4,13 @@ import TestiMonialSlider from "../../components/TestimonialSlider";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import Circles from "../../components/Circles";
 
 const Testimonials = () => {
   return (
     <div className="h-full bg-primary/30 py-32 text-center">
       <div className="container mx-auto h-full flex flex-col justify-center">
+        <Circles />
         {/* title */}
         <motion.h2
           variants={fadeIn("up", 0.2)}

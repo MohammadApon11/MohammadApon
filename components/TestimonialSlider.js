@@ -1,25 +1,25 @@
 // testimonial data
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    image: "/avt-1.png",
+    name: "Juthy Akter",
+    position: "Coluque",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "This one is  amazing work,  only the limited person can do that.... we should inspire from your work , wish a bright future and go ahead.",
   },
   {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    image: "/avt-2.png",
+    name: "Mahidur Rahman",
+    position: "COLUque",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "As a person you are very good, so is your work. Inshallah Allah has something great in store for you.  Love and prayers from my side always.",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    image: "/avt-3.png",
+    name: "Arif Billah Aman",
+    position: "CEO of Solutya Pvt. Ltd.",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Exceptional! The web developer transformed our vision into a stunning site, exceeding expectations with him talent and dedication!",
   },
 ];
 

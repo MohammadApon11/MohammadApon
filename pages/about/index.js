@@ -1,21 +1,10 @@
 import React, { useState } from "react";
 
 // icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-  FaNodeJs,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
   SiRedux,
   SiTailwindcss,
   SiBootstrap,
@@ -33,30 +22,77 @@ const aboutData = [
       {
         title: "Front End Development",
         icons: [
-          <FaHtml5 key="html5" class="text-black" />,
-          <FaCss3 key="css3" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="next" />,
-          <SiRedux key="redux" />,
-          <SiTailwindcss key="tailwind" />,
-          <SiBootstrap key="bootstrap" />,
+          <FaHtml5 key="html5" className="text-orange-600 bg-white" />,
+          <FaCss3 key="css3" className="text-sky-500" />,
+          <FaJs key="js" className="text-yellow-500" />,
+          <FaReact key="react" className="text-blue-500" />,
+          <SiNextdotjs key="next" className="text-black bg-white" />,
+          <SiRedux key="redux" className="text-purple-500" />,
+          <SiTailwindcss key="tailwind" className="text-sky-500" />,
+          <SiBootstrap key="bootstrap" className="bg-white text-purple-600" />,
         ],
       },
       {
         title: "Back End Development",
         icons: [
-          <FaNodeJs key="node" />,
+          <FaNodeJs key="node" className="text-green-500" />,
           <SiExpress key="express" />,
-          <SiFirebase key="firebase" />,
+          <SiFirebase key="firebase" className="text-yellow-400" />,
         ],
       },
       {
         title: "Database",
         icons: [
-          <SiMongodb key="mongodb" />,
-          <SiSqlite key="sqlite" />,
+          <SiMongodb key="mongodb" className="text-green-600" />,
+          <SiSqlite key="sqlite" className="text-blue-500" />,
         ],
+      },
+    ],
+  },
+  {
+    title: "awards",
+    info: [
+      {
+        title: "Certified Programming Hero Web Development",
+        stage: "2022 - 2023",
+      },
+      {
+        title: "Certified Solutya Pvt. Ltd. Complete Internship",
+        stage: "07/2023 - 12/2023",
+      },
+      {
+        title: "Certified Computer Course",
+        stage: "2017 - 2018",
+      },
+    ],
+  },
+  {
+    title: "experience",
+    info: [
+      {
+        title: "Software Engineer - Solutya Pvt. Ltd.",
+        stage: "07/2023 - 12/2023",
+      },
+      {
+        title: "Web Development Course - Programming Hero",
+        stage: "2022 - 2023",
+      },
+    ],
+  },
+  {
+    title: "credentials",
+    info: [
+      {
+        title: "Web Development - Programming Hero",
+        stage: "2023",
+      },
+      {
+        title: "CSE - Kishoreganj Polytechnic Institute",
+        stage: "2019 - 2023",
+      },
+      {
+        title: "Web Developer - Solutya Pvt. Ltd.",
+        stage: "2023",
       },
     ],
   },
@@ -76,7 +112,7 @@ import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index, setIndex);
+
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left ">
       <Circles />
@@ -110,7 +146,14 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-              Hi there, I'm a versatile full-stack developer proficient in HTML, CSS, Tailwind, Bootstrap, and JavaScript. My expertise spans the MERN stack, Next.js, Redux, SQLite, and more. With a knack for crafting intuitive user interfaces and robust server-side solutions, I specialize in building dynamic web applications. I thrive on leveraging my diverse skill set to create seamless digital experiences, embodying adaptability and innovation in every project. Let's work together to bring your ideas to life!
+            Hi there, I'm a versatile full-stack developer proficient in HTML,
+            CSS, Tailwind, Bootstrap, and JavaScript. My expertise spans the
+            MERN stack, Next.js, Redux, SQLite, and more. With a knack for
+            crafting intuitive user interfaces and robust server-side solutions,
+            I specialize in building dynamic web applications. I thrive on
+            leveraging my diverse skill set to create seamless digital
+            experiences, embodying adaptability and innovation in every project.
+            Let's work together to bring your ideas to life!
           </motion.p>
           {/* counter */}
           <motion.div
@@ -175,7 +218,7 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-accent after:transition-all duration-300"
+                    "text-accent after:w-[100%] after:bg-red-600 after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
@@ -199,8 +242,16 @@ const About = () => {
                     {/* icon */}
                     {item.icons?.map((icon, itemIndex) => {
                       return (
-                        <div key={itemIndex} className={`text-2xl text-white ${icon.class}`}>
-                          {icon}
+                        <div
+                          key={itemIndex}
+                          className={`text-2xl text-white ${icon.class}`}
+                        >
+                          <div className="relative inline-block group cursor-pointer">
+                            {icon}
+                            <span className="opacity-0 bg-black text-white text-xs rounded py-1 px-2 absolute z-10 bottom-full left-1/2 transform -translate-x-1/2 translate-y-px transition-opacity duration-300 group-hover:opacity-100">
+                              {icon.key}
+                            </span>
+                          </div>
                         </div>
                       );
                     })}

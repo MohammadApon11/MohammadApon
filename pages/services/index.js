@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />
-      <div class="container mx-auto">
+      <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
@@ -31,9 +31,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              modi debitis ipsa doloremque ad at neque odio alias delectus
-              quibusdam.
+              Welcome to a world where creativity meets precision. Explore our services, where quality and innovation redefine industry standards.
             </motion.p>
           </div>
           {/* slider */}

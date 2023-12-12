@@ -22,29 +22,31 @@ import { FreeMode, Pagination } from "swiper";
 // data
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <RxDesktop />,
+    title: "Development",
+    description: "Crafting digital worlds, code by code: Our web development.",
   },
   {
     icon: <RxPencil2 />,
     title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Designing experiences, shaping visions: Where innovation meets elegance.",
   },
   {
-    icon: <RxDesktop />,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <RxCrop />,
+    title: "Branding",
+    description:
+      "Crafting identities, forging connections: Services branding redefines excellence.",
   },
   {
     icon: <RxReader />,
     title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Words that captivate, stories that sell: Our copyrighting.",
   },
   {
     icon: <RxRocket />,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Boosting visibility, driving success: Our expert SEO services.",
   },
 ];
 
@@ -77,7 +79,9 @@ const ServiceSlider = () => {
               {/* titl & desc */}
               <div className="mb-8">
                 <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">{item.description}</p>
+                <p className="max-w-[350px] leading-normal">
+                  {item.description}
+                </p>
               </div>
               {/* arrow */}
               <div className="text-3xl">

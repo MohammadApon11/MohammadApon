@@ -11,7 +11,7 @@ const Work = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />
-      <div class="container mx-auto">
+      <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
@@ -31,9 +31,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              modi debitis ipsa doloremque ad at neque odio alias delectus
-              quibusdam.
+              One-stop platform offering e-commerce, NFTs, learning resources, task management, chef insights, varied services, and an online Apple market.
             </motion.p>
           </div>
           {/* slider */}

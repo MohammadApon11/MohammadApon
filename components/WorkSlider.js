@@ -5,19 +5,19 @@ const workSlider = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/pro1.png",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/pro4.png",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/pro3.png",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/pro2.png",
         },
       ],
     },
@@ -25,19 +25,19 @@ const workSlider = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/pro5.png",
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/pro6.png",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/pro7.png",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/pro8.png",
         },
       ],
     },
@@ -84,7 +84,7 @@ const WorkSlider = () => {
                         width={500}
                         height={300}
                         alt=""
-                        className=""
+                        className="xl:max-w-[380px] xl:h-[210px] lg:max-w-[470px] lg:h-[270px] md:max-w-[370px] md:h-[210px] sm:max-w-[297px] sm:h-[176px] max-w-[250px] h-[115px] rounded-md"
                       />
                       {/* overlay gradient */}
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
