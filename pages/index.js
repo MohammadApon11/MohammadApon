@@ -67,7 +67,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[500px] max-h-[550px] absolute bottom-0 lg:right-[12%]"
+          className="w-full h-full max-w-[600px] max-h-[600px] absolute bottom-0 lg:right-[17%]"
         >
           <Avatar />
         </motion.div>
