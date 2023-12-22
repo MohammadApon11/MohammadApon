@@ -37,7 +37,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            A seasoned Full Stack Developer with 3 years' expertise. Successfully delivered a diverse range of 50+ projects, including a comprehensive full-stack project through Programming Hero's online platform, showcasing extensive proficiency and versatility.
+            A seasoned Full Stack Developer with 1.5 years' expertise. Successfully delivered a diverse range of 50+ projects, including a comprehensive full-stack project through Programming Hero's online platform, showcasing extensive proficiency and versatility.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
